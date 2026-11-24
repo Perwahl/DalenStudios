@@ -8,7 +8,7 @@ function sun(d){var r=Math.PI/180,n=d/864e5+2440587.5-2451545,L=(280.46+.9856474
  return{alt:Math.asin(Math.sin(la)*Math.sin(dec)+Math.cos(la)*Math.cos(dec)*Math.cos(t))/r,west:Math.sin(t)>0}}
 /* altitude, zenith, middle, horizon, far hill, near hill, light(0 dark text..1 light text), stars */
 var K=[[-18,'#0d1524','#1a2942','#33455c','#1c2a3a','#141d26',1,1],[-8,'#14213a','#2f4465','#6d6f85','#27344a','#182230',1,.7],[-3,'#24395a','#6c6f90','#d79a7c','#453f55','#262634',1,.12],
-[1,'#5d7697','#c9a79a','#f2c48e','#7b6670','#453f45',0,0],[7,'#9fb7c4','#dcd6c3','#f3dfb4','#a09b8b','#64665a',0,0],[16,'#b9cdd0','#dfe3d8','#efece1','#a9b3a3','#6c7663',0,0]];
+[-1.1,'#2c4363','#706c8e','#d99e7c','#4c4457','#2c2a37',1,.05],[-.3,'#7f98b6','#cba89c','#efbd89','#766169','#403a42',0,0],[2,'#86a0bb','#d0ad9f','#f3c791','#7f6a73','#494348',0,0],[7,'#9fb7c4','#dcd6c3','#f3dfb4','#a09b8b','#64665a',0,0],[16,'#b9cdd0','#dfe3d8','#efece1','#a9b3a3','#6c7663',0,0]];
 function hex(h){return[1,3,5].map(function(i){return parseInt(h.substr(i,2),16)})}
 function mix(a,b,t){a=hex(a);b=hex(b);return'rgb('+a.map(function(v,i){return Math.round(v+(b[i]-v)*t)})+')'}
 function paint(){
@@ -17,7 +17,7 @@ function paint(){
  var A=K[i],B=K[i+1],t=(a-A[0])/(B[0]-A[0]);
  ['--s1','--s2','--s3','--h1','--h2'].forEach(function(n,j){root.setProperty(n,mix(A[j+1],B[j+1],t))});
  root.setProperty('--stars',A[7]+(B[7]-A[7])*t);
- var dark=a<-.5;sky.classList.toggle('night',dark);
+ var dark=a<-.7;sky.classList.toggle('night',dark);
  /* the orb is the sun above the horizon, the moon after dusk */
  var up=h>-4;sky.classList.toggle('moon',!up);
  root.setProperty('--orb-y',up?Math.max(4,Math.min(62,8+h*1.15))+'%':(innerWidth<821?'44%':'66%'));root.setProperty('--orb-x',up?(s.west?'82%':'46%'):innerWidth<821?'16%':'50%');
