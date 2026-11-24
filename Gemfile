@@ -1,5 +1,4 @@
+# No Gemfile.lock on purpose: a pinned rake broke the build when Cloudflare updated theirs.
 source "https://rubygems.org"
 
-gem "webrick", "~> 1.7"
 gem "jekyll", "~> 4.3"
-gem "jekyll-environment-variables"
