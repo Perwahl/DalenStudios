@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dalen Studios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Dalen Studios is a game studio in Dalby, Sweden. Makers of SOVL: Fantasy Warfare.">
+  <meta name="theme-color" content="#1e1f1a">
+  <link rel="canonical" href="https://www.dalenstudios.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dalen Studios">
+  <meta property="og:title" content="Dalen Studios">
+  <meta property="og:description" content="Dalen Studios is a game studio in Dalby, Sweden. Makers of SOVL: Fantasy Warfare.">
+  <meta property="og:url" content="https://www.dalenstudios.com/">
+  <meta property="og:image" content="https://www.dalenstudios.com/assets/img/share.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preload" href="/assets/font/jost.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="sky" id="sky">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="orb" aria-hidden="true"></div>
+    <div class="wrap top">
+      <nav aria-label="Main"><a href="#games">Games</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    </div>
+    <div class="wrap title">
+      <h1><svg class="wm" viewBox="0 0 322 92" role="img" aria-label="Dalen Studios"><g fill="currentColor"><path fill-rule="evenodd" d="M0 0h34c25 0 42 15 42 37S59 74 34 74H0zM14 13v48h19c17 0 28-9 28-24S50 13 33 13z"/><path d="M78 74l31-60h9l31 60h-16l-19.5-39.5L94 74z"/><circle cx="113.5" cy="64" r="6.5"/><path d="M158 14h13v48h29v12h-42zM210 14h43v12h-30v12h27v11h-27v13h30v12h-43zM264 74V14h10l34 37V14h13v60h-10l-34-37v37z"/></g></svg><span class="st" aria-hidden="true">Studios</span></h1>
+      <p>A game studio in Dalby, Sweden.</p>
+    </div>
+    <div class="hills" aria-hidden="true"><svg viewBox="0 0 1440 260" preserveAspectRatio="none"><path class="h1" d="M0 150C160 96 300 70 470 110S760 190 930 140 1260 40 1440 92V260H0z"/><path class="h2" d="M0 190C200 150 330 168 520 196S900 226 1080 188 1330 130 1440 150V260H0z"/></svg></div>
+    <img class="tree" src="/assets/img/tree.svg" alt="" width="940" height="842">
+    <canvas id="grass" aria-hidden="true"></canvas>
+    <p class="clock" id="clock" hidden></p>
+  </header>
+  <script src="/assets/sky.js"></script>
+
+  <main class="soil">
+    <section class="wrap games" id="games">
+      <h2 class="sr">Games</h2>
+      <article class="game sovl">
+        <div class="art">
+          <img src="/assets/img/sovl-hero.webp" width="1920" height="620" alt="An orc warlord in front of a snowy mountain valley" loading="lazy">
+          <img class="logo" src="/assets/img/sovl-logo.webp" width="640" height="360" alt="SOVL: Fantasy Warfare" loading="lazy">
+        </div>
+        <div class="body">
+          <div class="txt">
+            <p class="say">Fantasy armies meet on the battlefield and fight until one side is the bloody victor. Charges, arrows and spells are settled with dice.</p>
+            <p class="meta">Free to play. Windows, Mac, iPhone, iPad and Android.</p>
+            <ul class="stores">
+              <li><a class="btn main" href="https://store.steampowered.com/app/1870300/">Play free on Steam</a></li>
+              <li><a class="btn" href="https://apps.apple.com/app/id6746472271">App Store</a></li>
+              <li><a class="btn" href="https://play.google.com/store/apps/details?id=com.DalenStudios.SOVL">Google Play</a></li>
+            </ul>
+          </div>
+          <dl class="feats">
+            <div><dt>Trail of Death</dt><dd>A procedural campaign with roguelite elements. Grow a small warband into an army that can face the final boss.</dd></div>
+            <div><dt>Army Builder</dt><dd>Pick a faction and a commander, choose units and equipment, and paint them in your own colours.</dd></div>
+            <div><dt>Battle</dt><dd>Fight the AI, or other players online.</dd></div>
+            <div><dt>On the table</dt><dd>SOVL is a ruleset too. <a href="https://perwahl.github.io/SOVLRules/">Read the rules</a> and play with your own miniatures.</dd></div>
+          </dl>
+        </div>
+        <ul class="shots">
+          <li><img src="/assets/img/sovl-battle-lake.webp" width="1280" height="720" loading="lazy" alt="SOVL battle: orcs and an empire army meet by a lake"></li>
+          <li><img src="/assets/img/sovl-battle-cavern.webp" width="1280" height="720" loading="lazy" alt="SOVL battle: dwarfs and orcs in a cavern"></li>
+          <li><img src="/assets/img/sovl-army.webp" width="1280" height="720" loading="lazy" alt="SOVL army list: a vampire countess and her undead battalion"></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="wrap pair">
+      <div id="about">
+        <h2>About</h2>
+        <p class="lead">Dalen Studios is a game studio in Dalby, Sweden. We develop and publish our own games.</p>
+      </div>
+      <div id="contact">
+        <h2>Contact</h2>
+        <p class="lead"><a href="mailto:per@dalenstudios.com">per@dalenstudios.com</a></p>
+        <p>Questions about a game, support or press. SOVL players also meet on <a href="https://www.reddit.com/r/sovlgame/">r/sovlgame</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>© 2026 Dalen Studios AB, Dalby, Sweden</p>
+      <nav aria-label="Footer"><a href="/privacy/">Privacy</a><a href="mailto:per@dalenstudios.com">Contact</a></nav>
+    </div>
+  </footer>
+</body>
+</html>

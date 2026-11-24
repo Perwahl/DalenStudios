@@ -1,0 +1,9 @@
+# Pages of the old site
+/about /#about 301
+/about/ /#about 301
+/contact /#contact 301
+/contact/ /#contact 301
+/team /#about 301
+/team/* /#about 301
+/services / 301
+/services/* / 301
